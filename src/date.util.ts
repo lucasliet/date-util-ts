@@ -7,12 +7,12 @@ export default class DateUtil {
  * @return Date object
  */
   public static parseDate(date: string): Date {
-    if (DateUtil.isBRFormat(date)) {
+    if (DateUtil.isInBRFormat(date)) {
 
       const [day, month, year] = date.split('/');
       return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
 
-    } else if (DateUtil.isISOFormat(date)) {
+    } else if (DateUtil.isInISOFormat(date)) {
 
       const [year, month, day] = date.split('-');
       return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
@@ -29,7 +29,7 @@ export default class DateUtil {
     if (date instanceof Array) date = date[0];
 
     if (!(date instanceof Date)) {
-      if (DateUtil.isISOFormat(date))
+      if (DateUtil.isInISOFormat(date))
         return date;
       else
         date = DateUtil.parseDate(date);
@@ -47,7 +47,7 @@ export default class DateUtil {
     if (date instanceof Array) date = date[0];
 
     if (!(date instanceof Date)) {
-      if (DateUtil.isBRFormat(date))
+      if (DateUtil.isInBRFormat(date))
         return date;
       else
         date = DateUtil.parseDate(date);
@@ -64,7 +64,7 @@ export default class DateUtil {
   * @param date string
   * @returns true or false
   */
-  public static isISOFormat(date: string): boolean {
+  public static isInISOFormat(date: string): boolean {
     return date.match(/\d{4}-\d{2}-\d{2}/g) ? true : false;
   }
 
@@ -73,7 +73,7 @@ export default class DateUtil {
    * @param date string
    * @returns true or false
    */
-  public static isBRFormat(date: string): boolean {
+  public static isInBRFormat(date: string): boolean {
     return date.match(/\d{2}\/\d{2}\/\d{4}/g) ? true : false;
   }
 
