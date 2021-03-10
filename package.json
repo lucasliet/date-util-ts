@@ -1,0 +1,35 @@
+{
+  "name": "@lucasliet/date-util",
+  "version": "1.0.0",
+  "description": "Date handler to parse string and date in ISO and BR format",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "ts-node-dev --transpile-only --ignore-watch ./node_modules/ ./src/index.ts",
+    "build": "tsc -p .",
+    "clean": "rm -rf ./node_modules .yarn.lock; yarn"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.33",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasliet/date-util-ts.git"
+  },
+  "keywords": [
+    "date-util",
+    "date"
+  ],
+  "author": "lucasliet <lucasouliveira@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/lucasliet/date-util-ts/issues"
+  },
+  "homepage": "https://github.com/lucasliet/date-util-ts#readme"
+}
