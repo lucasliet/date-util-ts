@@ -1,12 +1,11 @@
 {
   "name": "@lucasliet/date-util",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Date handler to parse string and date in ISO and BR format",
-  "main": "./lib/date.util.js",
-  "types": "./lib/date.util.d.ts",
-  "type": "module",
+  "main": "./dist/date.util.js",
+  "types": "./dist/date.util.d.ts",
   "directories": {
-    "lib": "lib"
+    "lib": "dist"
   },
   "scripts": {
     "build": "tsc -p .",
