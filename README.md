@@ -1,6 +1,10 @@
 # Date Util
 Date handler to parse string and date in ISO and BR format
 
+[![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@lucasliet/date-util)
+[![NPM Downloads](https://img.shields.io/npm/dm/%40lucasliet%2Fdate-util?logo=npm&labelColor=%23CB3837)](https://www.npmjs.com/package/@lucasliet/date-util)
+
+
 ## installation
 ```SH
 yarn add @lucasliet/date-util
